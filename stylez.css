@@ -1,0 +1,19 @@
+.board{
+    display: grid;
+    grid-template: repeat(3, minmax(300px, 1fr)) / repeat(3, minmax(300px, 1fr)) ;
+    border: 1px solid black;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: cener;
+    font-size: 5rem;
+    border: 1px solid gray;
+    background-color: lightyellow;
+    cursor: pointer;
+}
+.cell:hover{
+    background-color: rgb(247, 247, 236);
+}
