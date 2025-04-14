@@ -1,19 +1,167 @@
+body{
+    background-color: #F1EFEC;
+}
+.title{
+    text-align: center;   
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 50px;
+}
+.playboard{
+    display: flex;
+    flex-direction: column;
+}
 .board{
     display: grid;
-    grid-template: repeat(3, minmax(300px, 1fr)) / repeat(3, minmax(300px, 1fr)) ;
-    border: 1px solid black;
+    grid-template: repeat(3, minmax(100px, 220px)) / repeat(3, minmax(100px, 220px)) ;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 30px;
 }
-
+.turn{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .cell{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: cener;
-    font-size: 5rem;
-    border: 1px solid gray;
+    text-align: center;
     background-color: lightyellow;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8rem;
 }
+
 .cell:hover{
-    background-color: rgb(247, 247, 236);
+    background-color: #F1EFEC;
 }
+
+#form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: #D4C9BE;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  #form input[type="text"] {
+    padding: 0.7rem 1rem;
+    border: 1px solid #F1EFEC;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  #form input[type="text"]:focus {
+    outline: none;
+    border-color: #123458;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  }
+  
+  #form button {
+    padding: 0.8rem 1.2rem;
+    background-color: #123458;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+    transition: font-size 0.25s ease-in-out;
+  }
+  
+  #form button:hover {
+    font-size: 1.1rem;
+    background-color: #2b4664;
+  }
+  #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 2rem;
+  }
+  
+  .player {
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #player-one-name,
+  #player-two-name{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  #player-one-score,
+  #player-two-score {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #555;
+  }
+.hidden {
+    display: none !important;
+}
+
+#score-controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .buttongrid{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-items: center;
+  }
+  
+  #reset-score-btn{
+    width: 80%;
+    padding: 0.6rem 1.2rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: font-size 0.25s ease-in-out;
+  }
+
+  #new-game{
+    width: 80%;
+    padding: 0.6rem 1.2rem;
+    background-color: #123458;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: font-size 0.25s ease-in;
+  }
+  
+  #reset-score-btn:hover {
+    font-size: 1.1rem;
+    background-color: #c0392b;
+  }
+  #new-game:hover {
+    font-size: 1.1rem;
+    background-color: #30465c;
+  }

@@ -9,8 +9,33 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title">TicTacToe Razvan Edition</h1>
+        <form method="fill" id="form">
+            <legend>Please add your names:</legend>
+            <label for="playerOne">Player 1 Name</label>
+            <input type="text" name="playerOne" id="playerOne" required>
+            <label for="playerTwo">Player 2 Name</label>
+            <input type="text" name="playerTwo" id="playerTwo" required>
+            <button type="submit">Start Game</button>
+        </form>
+        <div id="game-container" class="hidden">
+            <div id="player-one" class="player">
+                <div id="player-one-name">Player 1</div>
+                <div id="player-one-score">Score: 0</div>
+              </div>
+        <div class="playboard">
         <h1 class="turn"></h1>
         <div class="board"></div>
+        <div class="buttongrid">
+        <button id="new-game">New Game</button>
+        <button id="reset-score-btn">Reset Score</button>
+    </div>
+    </div> 
+    <div id="player-two" class="player">
+        <div id="player-two-name">Player 2</div>
+        <div id="player-two-score">Score: 0</div>
+      </div>
+</div>
     </div>
 </body>
 </html>
